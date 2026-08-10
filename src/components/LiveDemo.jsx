@@ -21,7 +21,7 @@ export default function LiveDemo() {
           <span className="dot red" />
           <span className="dot yellow" />
           <span className="dot green" />
-          <span className="device-url">suar.vercel.app/demo</span>
+          <span className="device-url">suar-tools.vercel.app/demo</span>
         </div>
         <iframe
           src="/demo.html"

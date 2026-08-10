@@ -15,16 +15,15 @@ export const DOC_CATEGORIES = [
         title: 'Instalasi via Script Tag',
         body: [
           'Cara paling cepat untuk mencoba Lentera di halaman apa pun:',
-          '<script src="https://suar.vercel.app/lentera.js"></script>\n<script>Lentera.init()</script>',
+          '<script src="https://suar-tools.vercel.app/lentera.js"></script>\n<script>Lentera.init()</script>',
           'Taruh sebelum tag </body> ditutup.',
         ],
       },
       {
         slug: 'instalasi-npm',
-        title: 'Instalasi via NPM',
+        title: 'Instalasi via NPM (Segera)',
         body: [
-          'npm install lentera-console',
-          "import { Lentera } from 'lentera-console'\nLentera.init()",
+          'Package lentera-console di npm belum dipublish. Untuk sekarang, pakai cara script tag di atas — itu satu-satunya cara resmi yang sudah bisa dipakai.',
         ],
       },
       {
