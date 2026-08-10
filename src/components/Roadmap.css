@@ -1,0 +1,40 @@
+.roadmap-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+  gap:16px;
+}
+.roadmap-item{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px;
+  background:rgba(255,255,255,0.015);
+  transition:border-color .15s ease, transform .15s ease;
+}
+.roadmap-item:hover{ border-color:var(--signal); transform:translateY(-3px); }
+.roadmap-item .status{
+  font-size:10px; letter-spacing:0.06em; text-transform:uppercase;
+  color:var(--fog); display:inline-block; margin-bottom:10px;
+}
+.roadmap-item .status.soon{ color:var(--beam); }
+.roadmap-item .status.available{ color:var(--signal); }
+.roadmap-item h4{
+  font-family:-apple-system, sans-serif;
+  font-weight:600;
+  font-size:1rem;
+  margin-bottom:6px;
+  color:var(--paper);
+}
+.roadmap-item p{ color:var(--fog); font-size:0.85rem; line-height:1.6; margin-bottom:16px; }
+.install-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:0.82rem;
+  font-weight:600;
+  color:#241304;
+  background:linear-gradient(180deg, var(--beam), var(--beam-hot));
+  padding:8px 16px;
+  border-radius:999px;
+  transition:transform .15s ease;
+}
+.install-btn:hover{ transform:translateY(-2px); }

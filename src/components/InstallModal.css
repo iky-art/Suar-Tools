@@ -1,0 +1,62 @@
+.modal-overlay{
+  position:fixed;
+  inset:0;
+  z-index:99997;
+  background:rgba(5,7,10,0.72);
+  backdrop-filter:blur(4px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.modal-card{
+  position:relative;
+  width:100%;
+  max-width:380px;
+  background:linear-gradient(160deg, var(--steel-2), var(--steel));
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:30px 26px 26px;
+  text-align:center;
+  box-shadow:0 30px 70px -20px rgba(0,0,0,0.7);
+}
+.modal-close{
+  position:absolute;
+  top:14px; right:14px;
+  color:var(--fog);
+  padding:4px;
+  border-radius:6px;
+}
+.modal-close:hover{ color:var(--paper); background:rgba(255,255,255,0.05); }
+
+.modal-lantern{
+  display:flex;
+  justify-content:center;
+  margin-bottom:6px;
+  filter:drop-shadow(0 0 16px rgba(255,150,60,0.35));
+}
+
+.modal-card h3{
+  font-size:1.2rem;
+  color:var(--paper);
+  margin-bottom:10px;
+}
+.modal-card p{
+  color:var(--fog);
+  font-size:0.88rem;
+  line-height:1.65;
+  margin-bottom:24px;
+}
+.modal-actions{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.modal-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  width:100%;
+  font-size:0.85rem;
+}

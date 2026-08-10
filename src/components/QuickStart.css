@@ -1,0 +1,40 @@
+.code-card{
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  background:#0a0e14;
+}
+.code-tabs{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  padding:10px 12px;
+  border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,0.015);
+}
+.code-tabs button{
+  font-size:0.8rem;
+  color:var(--fog);
+  padding:7px 14px;
+  border-radius:8px;
+}
+.code-tabs button.active{
+  background:var(--steel-2);
+  color:var(--paper);
+}
+.copy-btn{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  color:var(--signal) !important;
+  font-size:0.78rem !important;
+}
+.code-card pre{
+  padding:22px 20px;
+  overflow-x:auto;
+  font-size:0.85rem;
+  line-height:1.7;
+  color:#c9d6e3;
+  font-family:'SF Mono', Menlo, monospace;
+}

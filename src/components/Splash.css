@@ -1,0 +1,17 @@
+.splash{
+  position:fixed;
+  inset:0;
+  z-index:100000;
+  background:radial-gradient(ellipse 700px 500px at 50% 40%, #101a26 0%, #080b10 70%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+}
+.splash-word{
+  font-family:'Fraunces', Georgia, serif;
+  font-size:1.4rem;
+  letter-spacing:0.04em;
+  color:#eef1f5;
+}

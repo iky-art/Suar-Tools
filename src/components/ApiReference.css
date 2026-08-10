@@ -1,0 +1,24 @@
+.api-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  max-width:640px;
+}
+.api-item{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:16px 18px;
+  background:rgba(255,255,255,0.015);
+}
+.api-item code{
+  font-family:'SF Mono', Menlo, monospace;
+  font-size:0.88rem;
+  color:var(--beam);
+  display:block;
+  margin-bottom:6px;
+}
+.api-item p{
+  color:var(--fog);
+  font-size:0.85rem;
+  line-height:1.6;
+}
