@@ -14,6 +14,7 @@ export default function Footer() {
           <div className="footer-brand">
             <span className="brand-dot" />
             <span>Suar</span>
+            <span className="footer-version">v1.1.0</span>
           </div>
           <nav className="footer-links">
             <a href="#produk">Produk</a>

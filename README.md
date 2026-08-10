@@ -72,6 +72,11 @@ Dokumen lebih lengkap ada di folder [`docs/`](./docs/README.md) dan juga tampil 
 
 Tombol **Install** di section "Unduh Plugin" tidak langsung mendownload — muncul modal konfirmasi dulu yang mengarahkan ke `/dokumentasi`, dengan opsi "Tetap Unduh" kalau mau lanjut download tanpa baca dokumentasi dulu.
 
+## Riwayat Versi Website
+
+- **v1.1.0** — splash screen, ikon Lentera realistis, modal konfirmasi Install (beda alur VS Code & Acode), halaman Dokumentasi terpisah, halaman 404, LICENSE, meta Open Graph, `lentera.js` standalone
+- **v1.0.0** — rilis awal (Hero, produk, demo, roadmap, dasar-dasar)
+
 ## Catatan
 
 - Belum sempat `npm install` / build di sisi pembuat kode ini (sandbox tanpa akses internet) — jalankan `npm install` dulu sebelum `npm run dev`.

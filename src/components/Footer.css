@@ -30,6 +30,14 @@ footer{
   width:8px; height:8px; border-radius:50%;
   background:radial-gradient(circle at 35% 30%, var(--beam), var(--beam-hot));
 }
+.footer-version{
+  font-family:-apple-system, sans-serif;
+  font-size:10px;
+  color:var(--fog);
+  background:var(--steel-2);
+  padding:2px 7px;
+  border-radius:999px;
+}
 .footer-links{ display:flex; gap:18px; }
 .footer-links a{ font-size:0.85rem; color:var(--fog); }
 .footer-links a:hover{ color:var(--paper); }

@@ -1,11 +1,13 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { BookOpen, Download, X } from 'lucide-react'
+import { BookOpen, Download, ExternalLink, X } from 'lucide-react'
 import LanternIcon from './LanternIcon.jsx'
 import './LanternIcon.css'
 import './InstallModal.css'
 
-export default function InstallModal({ open, onClose, pluginName, file, docSlug }) {
+export default function InstallModal({ open, onClose, pluginName, file, docSlug, kind, acodeUrl, onProceed }) {
+  const isAcode = kind === 'acode'
+
   return (
     <AnimatePresence>
       {open && (
@@ -41,14 +43,28 @@ export default function InstallModal({ open, onClose, pluginName, file, docSlug 
               >
                 <BookOpen size={15} /> Baca Dokumentasi
               </Link>
-              <a
-                href={file}
-                download
-                className="btn btn-ghost modal-btn"
-                onClick={onClose}
-              >
-                <Download size={15} /> Tetap Unduh
-              </a>
+
+              {isAcode ? (
+                <a
+                  href={acodeUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-ghost modal-btn"
+                  onClick={onClose}
+                >
+                  <ExternalLink size={15} /> Buka di Acode
+                </a>
+              ) : (
+                <button
+                  className="btn btn-ghost modal-btn"
+                  onClick={() => {
+                    onClose()
+                    onProceed?.()
+                  }}
+                >
+                  <Download size={15} /> Tetap Unduh
+                </button>
+              )}
             </div>
           </motion.div>
         </motion.div>
