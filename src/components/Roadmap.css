@@ -38,3 +38,22 @@
   transition:transform .15s ease;
 }
 .install-btn:hover{ transform:translateY(-2px); }
+
+.install-btn-group{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.install-btn-secondary{
+  background:transparent;
+  border:1px solid var(--line);
+  color:var(--paper);
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.install-btn-secondary:hover{
+  border-color:var(--beam);
+  transform:translateY(-2px);
+}

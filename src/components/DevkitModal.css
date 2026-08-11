@@ -1,0 +1,71 @@
+.devkit-wide{
+  max-width:480px;
+  max-height:80vh;
+  text-align:left;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+.devkit-back{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  color:var(--fog);
+  font-size:0.8rem;
+  margin-bottom:14px;
+  padding:4px 0;
+}
+.devkit-back:hover{ color:var(--paper); }
+
+.devkit-features-title{
+  text-align:left;
+  margin-bottom:14px;
+}
+
+.devkit-features-list{
+  overflow-y:auto;
+  padding-right:4px;
+  flex:1;
+}
+.devkit-category{ margin-bottom:22px; }
+.devkit-category-head{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:4px;
+}
+.devkit-category-head h4{
+  font-family:-apple-system, sans-serif;
+  font-weight:600;
+  font-size:0.92rem;
+  color:var(--beam);
+}
+.devkit-subtitle{
+  color:var(--fog);
+  font-size:0.78rem;
+  margin-bottom:8px;
+  font-style:italic;
+}
+.devkit-category ul{
+  list-style:none;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px 10px;
+  margin-top:8px;
+}
+.devkit-category li{
+  color:var(--fog);
+  font-size:0.8rem;
+  padding-left:12px;
+  position:relative;
+  line-height:1.4;
+}
+.devkit-category li::before{
+  content:"—";
+  position:absolute;
+  left:0;
+  color:var(--line);
+}
+@media(max-width:420px){
+  .devkit-category ul{ grid-template-columns:1fr; }
+}
