@@ -3,6 +3,7 @@ import Splash from '../components/Splash.jsx'
 import Hero from '../components/Hero.jsx'
 import WhySuar from '../components/WhySuar.jsx'
 import LenteraShowcase from '../components/LenteraShowcase.jsx'
+import DevkitShowcase from '../components/DevkitShowcase.jsx'
 import LiveDemo from '../components/LiveDemo.jsx'
 import Compare from '../components/Compare.jsx'
 import ApiReference from '../components/ApiReference.jsx'
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <WhySuar />
       <LenteraShowcase />
+      <DevkitShowcase />
       <LiveDemo />
       <Compare />
       <ApiReference />

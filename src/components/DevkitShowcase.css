@@ -1,0 +1,33 @@
+.devkit-card{
+  margin-top:20px;
+  opacity:0.96;
+}
+.devkit-visual{
+  background:repeating-linear-gradient(
+    135deg,
+    #14181c,
+    #14181c 10px,
+    #171c21 10px,
+    #171c21 20px
+  );
+  border:1px dashed #2a352d;
+}
+.devkit-soon-badge{
+  font-family:'Fraunces', Georgia, serif;
+  font-size:1.1rem;
+  letter-spacing:0.02em;
+  color:var(--fog);
+  border:1px solid var(--line);
+  padding:10px 20px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.02);
+}
+.devkit-tag{
+  background:var(--steel-2) !important;
+  color:var(--fog) !important;
+}
+.devkit-more{
+  color:var(--fog) !important;
+  font-style:italic;
+  font-size:0.8rem !important;
+}
